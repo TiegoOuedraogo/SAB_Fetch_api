@@ -38,7 +38,7 @@ This web application allows users to interact with a makeup products catalog. It
 - Add user authentication for managing personal product lists.
 
 ## Developers
-- [Your Name or Your Team's Name]
+- Tiego Ouedraogo
 
 ## License
 This project is licensed under the [MIT License](LICENSE).

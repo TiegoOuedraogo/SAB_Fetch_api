@@ -184,7 +184,7 @@ createProduct().then(response => console.log("Created Product:", response))
   async function deleteAndCreateProduct() {
     try {
         // Try deleting a product
-        const productIdToDelete = 'existingProductId'; // Replace with a valid ID
+        const productIdToDelete = 'existingProductId'; 
         const deleteResponse = await deleteProduct(productIdToDelete);
         console.log(`Product with ID ${productIdToDelete} deleted:`, deleteResponse);
 

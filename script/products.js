@@ -205,31 +205,46 @@ createProduct().then(response => console.log("Created Product:", response))
 
 deleteAndCreateProduct();
 
+async function getProduct(productId) {
+    const url = `https://659dc59047ae28b0bd34d800.mockapi.io/api/v1/Makeup/${productId}`;
+    console.log(`Fetching product with ID: ${productId}`);
 
-    async function getProduct(productId) {
-        try {
-            const response = await fetch(`https://659dc59047ae28b0bd34d800.mockapi.io/api/v1/Makeup/${productId}`);
-            if (!response.ok) throw new Error('Network response was not ok');
-            return await response.json();
-        } catch (error) {
-            console.error('GET error:', error);
-        }
+    try {
+        const response = await fetch(url);
+
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const product = await response.json();
+        console.log(`Fetched product:`, product);
+        return product;
+    } catch (error) {
+        console.error('GET error:', error);
     }
+}
+
     async function updateProduct(productId, updatedData) {
+        const url = `https://659dc59047ae28b0bd34d800.mockapi.io/api/v1/Makeup/${productId}`;
+        console.log(`Updating product with ID: ${productId}`, updatedData);
+    
         try {
-            const response = await fetch(`https://659dc59047ae28b0bd34d800.mockapi.io/api/v1/Makeup/${productId}`, {
+            const response = await fetch(url, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(updatedData)
             });
+    
             if (!response.ok) throw new Error('Network response was not ok');
-            return await response.json();
+            
+            const updatedProduct = await response.json();
+            console.log(`Updated product:`, updatedProduct);
+            return updatedProduct;
         } catch (error) {
             console.error('PUT error:', error);
         }
     }
+    
     async function deleteProduct(productId) {
         try {
             const response = await fetch(`https://659dc59047ae28b0bd34d800.mockapi.io/api/v1/Makeup/${productId}`, {

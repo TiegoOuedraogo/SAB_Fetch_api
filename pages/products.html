@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Products Search</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/products.css">
+
+    <script defer src="/script/products.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="/images/logo.png" alt="Makeup Search Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+
+            <form class="nav-search-form" action="searchResult.html" method="get">
+                <input type="text" name="product_type" placeholder="Product Type">
+                <input type="text" name="brand" placeholder="Brand">
+                <input type="text" name="name" placeholder="Name">
+                <input type="number" name="price_greater_than" placeholder="Price Greater Than">
+                <input type="number" name="price_less_than" placeholder="Price Less Than">
+                <input type="number" name="rating_greater_than" placeholder="Rating Greater Than">
+                <input type="number" name="rating_less_than" placeholder="Rating Less Than">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
+
+        <div class="auth-dropdown">
+            <button class="dropbtn">Account</button>
+            <div class="dropdown-content">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <main>
+       <h2>List of our products</h2>
+        <div class="product-container">
+        </div>
+         <!-- Pagination Container -->
+         <div class="pagination-container">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Makeup Search. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+            <p><a href="about.html">About Us</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

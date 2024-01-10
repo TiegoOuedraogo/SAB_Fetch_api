@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #333;
+    text-decoration: none;
+}
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #007bff; 
+}
+
+.social-links i {
+    font-size: 20px; 
+}

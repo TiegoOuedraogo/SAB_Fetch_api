@@ -1,0 +1,38 @@
+#brand-info-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; 
+}
+.brand-info {
+    border-bottom: 1px solid #ddd; 
+    padding: 15px 0; 
+    margin-bottom: 15px; 
+    text-align: center; 
+}
+
+.brand-info:last-child {
+    border-bottom: none; 
+}
+
+.brand-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.brand-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.brand-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
